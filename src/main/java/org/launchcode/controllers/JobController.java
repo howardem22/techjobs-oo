@@ -58,7 +58,7 @@ public class JobController {
         Job job = new Job(name, employer,location,position,skill);
         jobData.add(job);
 
-        return index(model,job.getId());
+        return "redirect:?id="+job.getId();
 
     }
 }
